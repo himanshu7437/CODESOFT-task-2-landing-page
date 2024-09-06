@@ -1,0 +1,211 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins ;
+    background-color: #11171d;
+    color: white;
+    margin: auto;
+   
+}
+#header{
+    width: 100%;
+    background-color: #212121;
+}
+header{
+    max-width: 1200px;
+    margin: auto;
+    
+}
+.HEADER-IMAGE-TEXT{
+    color: rgb(255, 255, 255);
+    
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header ul{
+    display:  flex;
+    gap: 16px;
+    font-size: 16px;
+
+}
+header ul li{
+    list-style: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+header ul li:hover{
+ color: aqua;
+}
+
+.menu-icon i{
+    font-size: 35px;
+}
+
+/* hero section css */
+
+#hero{
+    width: 100%;
+    height: 86vh;
+    /* padding: 15px; */
+    
+}
+.hero-main{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero-first-half{
+    width: 50%;
+    flex: 1;
+    padding: 0;
+   
+}
+.hero-first-half .p1{
+    color: white;
+}
+.hero-first-half .p2{
+    color: #979797
+}
+.hero-first-half h1{
+    font-size: 35px;
+}
+.hero-first-half button{
+    background-color: aqua;
+    padding: 12px 28px;
+    border-radius: 40px;
+    outline: none;
+    border : none;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 0 10px #0ef;
+    color: #1f232c;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.hero-first-half button:hover{
+    background-color: rgb(27, 224, 224);
+}
+
+.hero-second-half{
+    width: 50%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    overflow: hidden;
+}
+
+.hero-second-half div{
+    width: 80%;
+    height: 70%;
+    overflow: hidden;
+    border-radius: 50px;
+
+}
+
+.hero-second-half div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    
+}
+
+header nav .menu-icon{
+    display: none;
+}
+
+/* responsiveness code for image  */
+
+@media  (max-width : 1200px) {
+    header{
+        padding: 15px
+    }
+    .hero-main{
+        padding: 15px;
+    }
+}
+
+@media  (max-width: 1024px) {
+
+    .hero-second-half div{
+        width: 70%;
+        height: 65%;
+        overflow: hidden;
+        border-radius: 50px;
+    }
+    .hero-first-half h1{
+        font-size: 30px;
+    }
+}
+
+@media  (max-width: 768px) {
+
+    header nav .menu-icon{
+        display: block;
+    }
+    
+   
+    header nav ul{
+        display: none;
+    }
+    .hero-first-half{
+        width: 100%;
+        flex: 1;
+        padding: 0;
+
+    }
+    .hero-second-half{
+        width: 100%;
+    }
+    .hero-main{
+        flex-direction: column-reverse;
+    }
+    .hero-second-half div{
+        width: 60%;
+        height: 100%;
+        overflow: hidden;
+        border-radius: 50px;
+    }
+
+    .hero-first-half h1{
+        font-size: 28px;
+    }
+
+}
+
+@media  (max-width: 640px) {
+    .hero-second-half div{
+        width: 70%;
+        height: 100%;
+        overflow: hidden;
+        border-radius: 50px;
+    }
+
+    .hero-first-half h1{
+        font-size: 28px;
+    }
+}
+
+@media  (max-width: 480px) {
+    .hero-second-half div{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        border-radius: 50px;
+    }
+
+    .hero-first-half h1{
+        font-size: 28px;
+    }
+}
+
